@@ -15,19 +15,24 @@ struct ContentView: View {
               .frame(width: 300, height: 450)
               .foregroundColor(Color("Card"))
               .cornerRadius(10)
+          Image("Spade")
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+              .frame(height:100)
           
           VStack(spacing: 2) {
           Text("A")
+                  .font(.system(size: 30, weight: .light, design: .serif))
           Image("Spade")
                   .resizable()
                   .aspectRatio(contentMode: .fit)
                   .frame(width: 20, height: 20)
-              
-              
           }
           .offset(x: -120, y: -190)
+          
           VStack(spacing: 2) {
           Text("A")
+                  .font(.system(size: 30, weight: .light, design: .serif))
           Image("Spade")
                   .resizable()
                   .aspectRatio(contentMode: .fit)
